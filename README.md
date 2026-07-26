@@ -88,9 +88,3 @@ Si tienes alguna pregunta o necesitas soporte durante la realización de los lab
 ---
 
 ¡Bienvenido! Te recomendamos realizar los laboratorios en el orden presentado, ya que cada práctica construye la infraestructura y los conocimientos necesarios para la siguiente, culminando con un escenario completo de migración y operación.
-
-## Flujo de colaboración
-
-- Trabajar en `changes_course`.
-- Crear Pull Request hacia `main`.
-- Realizar el merge mediante `Squash and merge`.
