@@ -1,0 +1,15 @@
+EVIDENCIA SINTÉTICA — CTRL-TES-002
+Empresa: Financiera Andina (ficticia)
+Periodo: 2026-07
+Proceso: Tesoreria
+Responsable: Diego Perez
+
+Pago revisado:
+- Referencia: PAG-2026-07184
+- Valor: 18,750
+- Aprobación 1: registrada antes de la liberación
+- Aprobación 2: no disponible
+- Fecha de liberación: 2026-07-17
+- Excepción: el pago fue liberado sin la segunda aprobación requerida.
+
+Este archivo contiene datos ficticios exclusivos para el laboratorio.

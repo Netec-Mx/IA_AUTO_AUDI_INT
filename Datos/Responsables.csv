@@ -1,0 +1,7 @@
+﻿ResponsableId,Nombre,Area,Correo,Cargo,Activo
+RESP-001,Laura Gomez,Cuentas por pagar,laura.gomez@financieraandina.example,Jefe de Cuentas por Pagar,true
+RESP-002,Diego Perez,Tesoreria,diego.perez@financieraandina.example,Gerente de Tesoreria,true
+RESP-003,Sofia Martinez,Compras,sofia.martinez@financieraandina.example,Coordinadora de Compras,true
+RESP-004,Andres Ruiz,Accesos y Seguridad,andres.ruiz@financieraandina.example,Administrador de Identidades,true
+RESP-005,Camila Torres,Nomina,camila.torres@financieraandina.example,Jefe de Nomina,true
+RESP-006,Mateo Silva,Continuidad,mateo.silva@financieraandina.example,Lider de Continuidad,true

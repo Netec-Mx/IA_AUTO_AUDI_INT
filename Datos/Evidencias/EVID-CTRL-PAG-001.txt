@@ -1,0 +1,15 @@
+EVIDENCIA SINTÉTICA — CTRL-PAG-001
+Empresa: Financiera Andina (ficticia)
+Periodo: 2026-07
+Proceso: Cuentas por pagar
+Responsable: Laura Gomez
+
+Resumen de conciliación:
+- Facturas aprobadas revisadas: 124
+- Pagos ejecutados revisados: 124
+- Pagos duplicados: 0
+- Diferencias pendientes: 0
+- Fecha de revisión: 2026-07-18
+- Conclusión operativa: conciliación completa sin diferencias.
+
+Este archivo contiene datos ficticios exclusivos para el laboratorio.

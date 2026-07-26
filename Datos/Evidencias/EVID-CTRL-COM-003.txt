@@ -1,0 +1,14 @@
+EVIDENCIA SINTÉTICA — CTRL-COM-003
+Empresa: Financiera Andina (ficticia)
+Periodo: 2026-07
+Proceso: Compras
+Responsable: Sofia Martinez
+
+Muestra revisada:
+- Órdenes de compra: 20
+- Órdenes con proveedor autorizado: 20
+- Órdenes con aprobación vigente: 19
+- Orden observada: OC-2026-00491
+- Resultado: cumplimiento parcial por una aprobación vencida.
+
+Este archivo contiene datos ficticios exclusivos para el laboratorio.

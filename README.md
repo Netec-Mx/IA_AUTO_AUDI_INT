@@ -1,57 +1,83 @@
 # Automatización Avanzada de Procesos con Microsoft Copilot Studio
 
-Capacitación práctica orientada al diseño, construcción, prueba y publicación de un agente en Microsoft Copilot Studio aplicado a procesos de auditoría. El curso se enfoca en crear agentes con instrucciones controladas, temas conversacionales, variables, entidades, fuentes de conocimiento, respuestas generativas sustentadas, automatización mediante agent flows / workflows como herramientas, trazabilidad y despliegue en Microsoft Teams.
+Capacitación práctica orientada al diseño, construcción, prueba y publicación de un agente en Microsoft Copilot Studio aplicado a procesos de auditoría interna.
+
+Durante el curso, los participantes crearán el **Agente Auditor de Controles**, configurarán instrucciones y un tema de revisión, construirán un modelo de datos en Microsoft Dataverse, habilitarán la búsqueda mediante Quick Find e índice, conectarán el Servidor MCP de Microsoft Dataverse para consultar información gobernada, automatizarán el registro de revisiones mediante un workflow y publicarán el agente en Microsoft Teams.
+
+El caso de uso incluye trazabilidad en Dataverse, consulta de controles y criterios de auditoría, validación de entradas, detección de excepciones y generación de archivos CSV en SharePoint.
 
 ## Estructura
 
-- `CapituloXX/README.md`: guía de laboratorio por capítulo.
+- `CapituloXX/README.md`: guía práctica completa de cada capítulo.
+- `Datos/`: archivos CSV, evidencias sintéticas y casos de evaluación.
+- `images/`: capturas de pantalla de la práctica.
+- `Recursos/`: archivos ZIP de skill.
+- `SETUP.md`: preparación del entorno que debe completar el centro de instrucción.
 
 ## Lista de laboratorios
 
 ### Capítulo 1
 
-- [Definir usuarios, entradas, salidas, reglas y alcance del agente auditor](Capitulo01/README.md#definir-usuarios-entradas-salidas-reglas-y-alcance-del-agente-auditor)
-  - Descripción: Los participantes diseñarán el canvas funcional del agente auditor, estableciendo el proceso de auditoría a automatizar, los controles a revisar, la evidencia esperada, los posibles resultados, las restricciones de uso y los recursos iniciales que servirán como base para la construcción del agente.
-  - Duración estimada: 15 min
+- [Práctica 1 — Definir usuarios, entradas, salidas, reglas y alcance del agente auditor](Capitulo01/README.md)
+  - **Descripción:** Los participantes diseñarán el canvas funcional del Agente Auditor de Controles. Definirán los usuarios, las entradas requeridas, las salidas esperadas, las reglas de excepción, las restricciones de seguridad y el alcance del caso de uso.
+  - **Duración estimada:** 15 min
 
 ### Capítulo 2
 
-- [Crear el agente base, configurar instrucciones y probar escenarios de auditoría con control de alcance](Capitulo02/README.md#crear-el-agente-base-configurar-instrucciones-y-probar-escenarios-de-auditoría-con-control-de-alcance)
-  - Descripción: Los participantes crearán el agente base en Copilot Studio, definirán instrucciones orientadas al rol auditor, establecerán límites de respuesta, configurarán fuentes o conocimiento inicial y ejecutarán pruebas para validar que el agente responda dentro del alcance definido.
-  - Duración estimada: 20 min
+- [Práctica 2 — Crear el agente base, configurar instrucciones y probar escenarios de auditoría con control de alcance](Capitulo02/README.md)
+  - **Descripción:** Los participantes crearán la solución `LAB_Agente_Auditor`, el agente base y sus instrucciones generales. También configurarán el sitio de SharePoint, las bibliotecas del laboratorio y las reglas de alcance y seguridad del agente.
+  - **Duración estimada:** 20 min
 
 ### Capítulo 3
 
-- [Crear un tema de revisión de control con variables, entidades, condiciones y rutas de excepción](Capitulo03/README.md#crear-un-tema-de-revisión-de-control-con-variables-entidades-condiciones-y-rutas-de-excepción)
-  - Descripción: Los participantes crearán un tema conversacional para guiar una revisión de control interno, solicitando datos como proceso, control, periodo, responsable, riesgo y evidencia. También configurarán condiciones para manejar cumplimiento, excepciones, datos incompletos o necesidad de escalamiento.
-  - Duración estimada: 20 min
+- [Práctica 3 — Crear un tema de revisión de control con variables, entidades, condiciones y rutas de excepción](Capitulo03/README.md)
+  - **Descripción:** Los participantes crearán el tema de revisión y configurarán las variables necesarias para recopilar los nueve campos del proceso. También establecerán validaciones, condiciones, rutas de excepción y confirmación previa al registro.
+  - **Duración estimada:** 20 min
 
 ### Capítulo 4
 
-- [Configurar conocimiento y datos estructurados para responder consultas de auditoría con sustento](Capitulo04/README.md#configurar-conocimiento-y-datos-estructurados-para-responder-consultas-de-auditoría-con-sustento)
-  - Descripción: Los participantes incorporarán fuentes de conocimiento como procedimientos, matrices de control, políticas, documentos o tablas estructuradas. El agente será probado con consultas sobre criterios de revisión, evidencia, posibles hallazgos y observaciones preliminares.
-  - Duración estimada: 30 min
+- [Práctica 4 — Configurar conocimiento y datos estructurados para responder consultas de auditoría con sustento](Capitulo04/README.md)
+  - **Descripción:** Los participantes crearán las tablas `Responsables`, `Controles`, `CriteriosAuditoria` y `Revisiones`, configurarán las longitudes de sus columnas e importarán los datos sintéticos. También habilitarán Búsqueda de Dataverse, Quick Find, el índice de búsqueda y el Servidor MCP de Microsoft Dataverse para consultar información sustentada.
+  - **Duración estimada:** 30 min
 
 ### Capítulo 5
 
-- [Crear un workflow como herramienta para registrar una revisión y devolver confirmación o alertar excepción](Capitulo05/README.md#crear-un-workflow-como-herramienta-para-registrar-una-revisión-y-devolver-confirmación-o-alertar-excepción)
-  - Descripción: Los participantes crearán o conectarán un workflow que reciba información capturada por el agente, registre una revisión, comunique una excepción o devuelva una confirmación al usuario. Se validará el paso de variables, la ejecución del flujo y la respuesta final en la conversación.
-  - Duración estimada: 20 min
+- [Práctica 5 — Crear un workflow como herramienta para registrar una revisión y devolver confirmación o alertar excepción](Capitulo05/README.md)
+  - **Descripción:** Los participantes construirán `RegistrarRevisionAuditoria`. El workflow recibirá los datos confirmados por el agente, registrará exactamente una fila en `Revisiones`, identificará si existe una excepción y generará un archivo CSV en SharePoint cuando se requiera seguimiento.
+  - **Duración estimada:** 20 min
 
 ### Capítulo 6
 
-- [Ejecutar matriz de pruebas del agente auditor y ajustar instrucciones, temas, conocimiento o workflow](Capitulo06/README.md#ejecutar-matriz-de-pruebas-del-agente-auditor-y-ajustar-instrucciones-temas-conocimiento-o-workflow)
-  - Descripción: Los participantes ejecutarán escenarios de prueba para validar consistencia, fundamento de respuesta, manejo de excepciones, trazabilidad, ejecución del workflow y calidad de las respuestas generativas. Con base en los resultados, ajustarán instrucciones, temas, conocimiento o automatizaciones.
-  - Duración estimada: 25 min
+- [Práctica 6 — Ejecutar matriz de pruebas del agente auditor y ajustar instrucciones, temas, conocimiento o workflow](Capitulo06/README.md)
+  - **Descripción:** Los participantes importarán `Datos/CasosEvaluacion.csv` y ejecutarán escenarios relacionados con controles válidos e inexistentes, seguridad, validación de datos, consulta de Dataverse y ejecución del workflow. Según los resultados, ajustarán instrucciones, tema, Servidor MCP o automatización.
+  - **Duración estimada:** 25 min
 
 ### Capítulo 7
 
-- [Ejecutar una revisión completa desde Teams con consulta de conocimiento, registro automatizado y salida final](Capitulo07/README.md#ejecutar-una-revisión-completa-desde-teams-con-consulta-de-conocimiento-registro-automatizado-y-salida-final)
-  - Descripción: Los participantes probarán el agente desde Teams, simulando una revisión completa: captura de información, consulta de conocimiento, generación de respuesta sustentada, ejecución del workflow, registro o alerta automatizada y entrega de una salida final para el usuario auditor.
-  - Duración estimada: 20 min
+- [Práctica 7 — Ejecutar una revisión completa desde Teams con consulta de conocimiento, registro automatizado y salida final](Capitulo07/README.md)
+  - **Descripción:** Los participantes publicarán el agente en Microsoft Teams y ejecutarán el caso de uso completo: consulta del control mediante Dataverse MCP, recopilación y confirmación de datos, ejecución del workflow, creación del registro en Dataverse y generación de una exportación cuando exista una excepción.
+  - **Duración estimada:** 20 min
+
+## Flujo funcional del laboratorio
+
+```text
+Usuario en Copilot Studio o Teams
+  -> Agente Auditor de Controles
+  -> Consulta de controles y criterios mediante Dataverse MCP
+  -> Tema de revisión de control
+  -> Validación y confirmación de los datos
+  -> Workflow RegistrarRevisionAuditoria
+  -> Registro en Dataverse
+  -> Exportación CSV en SharePoint cuando existe excepción
+  -> Respuesta final al usuario
+```
+
+## Duración total
+
+**150 minutos — 2 horas y 30 minutos de práctica.**
 
 ## Flujo de colaboración
 
 - Trabajar en `changes_course`.
 - Crear Pull Request hacia `main`.
-- Merge por `Squash and merge`.
+- Realizar el merge mediante `Squash and merge`.
