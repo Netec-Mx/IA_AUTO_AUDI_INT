@@ -1,3 +1,5 @@
+<img src="images/neteclogo (2).png" alt="logo" width="300"/>
+
 # Automatización Avanzada de Procesos con Microsoft Copilot Studio
 
 Capacitación práctica orientada al diseño, construcción, prueba y publicación de un agente en Microsoft Copilot Studio aplicado a procesos de auditoría interna.
@@ -75,6 +77,17 @@ Usuario en Copilot Studio o Teams
 ## Duración total
 
 **150 minutos — 2 horas y 30 minutos de práctica.**
+-----------
+
+## 📬 Contacto y más información
+
+Si tienes alguna pregunta o necesitas soporte durante la realización de los laboratorios, no dudes en **contactar al equipo de Netec**. También puedes encontrar más recursos y cursos en nuestra página oficial:
+
+👉 https://netec.com
+
+---
+
+¡Bienvenido! Te recomendamos realizar los laboratorios en el orden presentado, ya que cada práctica construye la infraestructura y los conocimientos necesarios para la siguiente, culminando con un escenario completo de migración y operación.
 
 ## Flujo de colaboración
 
